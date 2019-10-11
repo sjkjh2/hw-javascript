@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02-array</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    document.write(li.length + '<br />');
+    
+    li.push('f'); //배열에 그냥 추가
+    document.write(li + '<br />');
+
+    li = li.concat(['g', 'h']); //배열에 다중으로 추가
+    document.write(li + '<br />');
+
+    li.unshift('0'); //배열 앞쪽에 추가
+    document.write(li + '<br />');
+
+    li.splice(1,0,'d'); //배열에 원하는 순서에 추가
+    document.write(li + '<br />');
+
+    li.splice(4,1,'no'); //배열에 원하는 배열 지우고 추가
+    document.write(li + '<br />');
+
+    li.shift(); //배열 앞쪽을 지움
+    document.write(li + '<br />');
+
+    li.pop(); //배열 뒤쪽을 지움
+    document.write(li + '<br />');
+
+    li.sort(); //배열 정렬
+    document.write(li + '<br />');
+
+    li.reverse(); //배열 역순으로 정렬
+    document.write(li + '<br />');
+    </script>
+</body>
+</html>
